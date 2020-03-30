@@ -14,7 +14,7 @@ public class UserControll {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("/CheckUserName")
+    @RequestMapping("/UserNameIsExist")
     public IMoocJSONResult checkUserNameExsits(String userName){
 
         if(userName == null || "".equals(userName)){

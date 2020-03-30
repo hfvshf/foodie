@@ -18,6 +18,8 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UsersMapper usersMapper;
 
+
+    @Transactional(propagation = Propagation.SUPPORTS)
     @Override
     public Users checkUserNameIsExsits(String userName) {
 
