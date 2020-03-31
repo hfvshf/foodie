@@ -1,12 +1,13 @@
 package com.hf.service;
 
+import com.hf.pojo.BO.UsersBO;
 import com.hf.pojo.Users;
 
 public interface UserService {
 
     public Users checkUserNameIsExsits(String userName);
 
-    public Users catStuById(Integer id);
+    public Users catStuById(UsersBO usersBO);
 
     public void saveStu(Users users);
 
